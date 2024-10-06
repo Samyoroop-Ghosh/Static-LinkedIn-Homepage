@@ -1,0 +1,639 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+hr {
+    border: 0.001rem solid rgb(238, 238, 238);
+}
+
+nav {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100vw;
+    height: 8.5vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.8rem;
+    box-shadow: 0 0.05em 0.05em lightgray;
+}
+
+nav .navleft {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-left: 8%;
+}
+
+.navleft .navicons {
+    width: 2.2rem;
+    margin: auto;
+}
+
+.navleft input {
+    width: 90%;
+    padding: 1.4vh;
+    font-size: 0.85rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(150, 197, 210, 0.236);
+    border: none;
+    border-radius: 6px;
+}
+
+nav .navmid {
+    width: 35%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5%;
+}
+
+.navmid figure {
+    flex: 15%;
+    text-align: center;
+    opacity: 0.7;
+    font-size: 0.8rem;
+    padding: 1% 0;
+}
+
+.navmid figure:hover {
+    opacity: 1;
+    border-bottom: 2px solid;
+}
+
+.navmid .navicons {
+    width: 25%;
+    margin: auto;
+}
+
+nav .navright {
+    width: 35%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8%;
+}
+
+.navright figure {
+    text-align: center;
+    opacity: 0.7;
+    font-size: 0.8rem;
+    padding: 1% 0;
+}
+
+.navright figure:hover {
+    opacity: 1;
+}
+
+.navright .navicons {
+    width: 20%;
+    margin: auto;
+}
+
+#maincanvas {
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+    padding: 12vh 7vw 0 7vw;
+    gap: 4vh;
+    background-color: rgb(245, 244, 239);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#LPanel {
+    flex: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+#profile {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0.1rem 0.1rem lightgray;
+    border-radius: 10px;
+}
+
+#profilebg {
+    width: 100%;
+    height: 25%;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 0.1rem 0.1rem lightgray;
+}
+
+#profiledp {
+    margin-left: 35%;
+    margin-top: -15%;
+    width: 5vw;
+    border: 2px solid gainsboro;
+    border-radius: 50%;
+}
+
+#profileusername {
+    margin: 5% 5% 2% 5%;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    opacity: 0.8;
+}
+
+#profilebio {
+    margin: 1% 5% 5% 5%;
+    font-size: 0.75rem;
+    color: grey;
+    text-align: center;
+
+}
+
+#profileinsights {
+    margin: 5%;
+    font-size: 0.8rem;
+    color: grey;
+    font-weight: 500;
+}
+
+#profilepremium {
+    margin: 5% 5% 0 5%;
+    font-size: 0.8rem;
+    color: grey;
+}
+
+#profilepromo {
+    margin: 3% 5% 5% 5%;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+#profilepromo img {
+    width: 5%;
+}
+
+#profilesaveditems {
+    margin: 5% 5% 5% 5%;
+    font-size: 0.8rem;
+}
+
+#profilesaveditems img {
+    width: 5%;
+    opacity: 0.6;
+}
+
+#belowprofile {
+    background-color: white;
+    box-shadow: 0 0.1rem 0.1rem lightgray;
+    border-radius: 10px;
+}
+
+#belowprofile .headers {
+    color: rgb(81, 81, 249);
+    font-size: 0.8rem;
+    padding: 5% 5%;
+    text-wrap: nowrap;
+}
+
+#belowprofile .items {
+    font-size: 0.8rem;
+    padding: 2%;
+    color: grey;
+    text-wrap: nowrap;
+}
+
+#belowprofile .items:hover {
+    background-color: rgb(238, 238, 238);
+}
+
+#belowprofile img {
+    width: 6%;
+    opacity: 0.8;
+    margin-left: 3%;
+}
+
+#CPanel {
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+#post {
+    background-color: white;
+    box-shadow: 0 0.1rem 0.1rem lightgray;
+    border-radius: 10px;
+}
+
+#postcreate {
+    display: flex;
+    align-items: center;
+}
+
+#postcreate img {
+    flex: 8%;
+    width: 5%;
+    margin: 2% 2% 0 2%;
+    border: 1px solid gainsboro;
+    border-radius: 50%;
+}
+
+#postcreate input {
+    flex: 90%;
+    border: 1px solid lightgray;
+    border-radius: 50px;
+    padding: 2%;
+    margin: 2% 2% 0 0%;
+    font-size: 0.9rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#postcreate p:hover {
+    background-color: rgb(238, 238, 238);
+}
+
+#posttypes {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+#posttypes p {
+    margin: 1%;
+    padding: 2%;
+    border-radius: 10px;
+}
+
+#posttypes img {
+    width: 9%;
+    margin-right: 5%;
+}
+
+#posttypes p:hover {
+    background-color: rgb(238, 238, 238);
+}
+
+#feedconatiner {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    margin-bottom: 10%;
+}
+
+.feed {
+    box-shadow: 0 0.1rem 0.1rem lightgray;
+    border-radius: 10px;
+    padding: 2%;
+    background-color: white;
+}
+
+.feedreference {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-size: 0.7rem;
+    padding: 0 1% 1% 1%;
+}
+
+.feedreference img {
+    width: 4%;
+    border: 1px solid gainsboro;
+    border-radius: 50%;
+    margin-right: 2%;
+}
+
+.feedauthor {
+    padding: 2% 1% 1% 1%;
+    width: 100%;
+    text-align: justify;
+}
+
+.feedauthor img {
+    width: 100%;
+    border: 1.5px solid gainsboro;
+    border-radius: 50%;
+
+}
+
+#feedauthorpic {
+    width: 10%;
+}
+
+#feedauthorname {
+    padding: 0% 1.5%;
+    font-size: 0.8rem;
+    text-align: left;
+}
+
+#feedauthorbio {
+    padding: 0% 2.1%;
+    font-size: 0.8rem;
+    color: grey;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    max-height: 1.5rem;
+    max-width: 20rem;
+}
+
+#feeduploadtime {
+    padding: 0% 1.5%;
+    font-size: 0.8rem;
+    color: grey;
+    text-align: left;
+}
+
+#feedauthorfollow {
+    width: 20%;
+    font-size: 1.2rem;
+    opacity: 0.8;
+    color: rgb(81, 81, 249);
+    text-align: center;
+}
+
+.feedbody p {
+    padding: 0% 2% 2% 2%;
+    font-size: 0.9rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    max-height: 2.5rem;
+}
+
+.feedbody #feedarticle {
+    padding: 0% 2% 2% 2%;
+    font-size: 0.9rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+    max-height: 12rem;
+}
+
+.feedbody img,
+video {
+    max-width: 100%;
+    padding: 2% 0 2% 0;
+    text-align: center;
+}
+
+.feedreaction {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: grey;
+    margin: 1% 1% 1.5% 1%;
+}
+
+.feedactions {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.feedactions p {
+    padding: 2%;
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+
+.feedactions img {
+    width: 15%;
+    margin-right: 5%;
+}
+
+.feedactions p:hover {
+    background-color: rgb(238, 238, 238);
+}
+
+#RPanel {
+    flex: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+#news {
+    background-color: white;
+    box-shadow: 0 0.1rem 0.1rem lightgray;
+    border-radius: 10px;
+    padding-bottom: 5%
+}
+
+#news #linkedinnews {
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 3% 5% 0 5%;
+    text-align: left;
+}
+
+#linkedinnews th {
+    text-align: right;
+}
+
+#news .headers {
+    padding: 2% 5%;
+    font-size: 1rem;
+    font-weight: 500;
+    color: grey;
+}
+
+#news .story {
+    padding: 2% 5%;
+    text-align: left;
+}
+
+#news .story:hover {
+    background-color: rgb(238, 238, 238);
+}
+
+.storyheaders {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.storyinsights {
+    font-size: 0.8rem;
+    color: grey;
+}
+
+#news span {
+    margin: 2% 3% 2% 3%;
+    padding: 1% 2%;
+    font-size: 0.9rem;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+#news span:hover {
+    background-color: rgb(238, 238, 238);
+}
+
+.gamestables {
+    padding: 1% 5%;
+    width: 100%;
+}
+
+.gamestables:hover {
+    background-color: rgb(238, 238, 238);
+}
+
+.gamestables th {
+    width: 15%;
+}
+
+.gamestables td {
+    padding: 0 4%;
+}
+
+.gamestables img {
+    width: 100%;
+    border: 1.5px solid gainsboro;
+    border-radius: 10%;
+}
+
+#wrapad {
+    position: sticky;
+    top: 11%;
+    transition: top 0.5s ease-in-out;
+}
+
+#adbody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 0% 2%;
+    box-shadow: 0 0.1rem 0.1rem lightgray;
+    border-radius: 10px;
+}
+
+#adbody #ad {
+    font-size: 0.8rem;
+    margin-left: auto;
+}
+
+#adbody #addesc {
+    text-align: center;
+    padding: 0 4%;
+    font-size: 0.9rem;
+    color: rgb(93, 93, 93);
+
+}
+
+#adbody #adimgcontianer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#adbody img {
+    width: 20%;
+    margin: 4%;
+}
+
+#adbody button {
+    margin: 5%;
+    padding: 3% 5%;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    color: rgb(81, 81, 249);
+    font-weight: bolder;
+    background-color: white;
+}
+
+#adfooter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgb(245, 244, 239);
+    margin-top: 1%;
+    padding: 8%;
+}
+
+#adfooter span {
+    margin: 1% 3%;
+    color: gray;
+    font-size: 0.8rem;
+}
+
+#copyright {
+    width: 100%;
+    text-align: center;
+    font-size: 0.8rem;
+    color: grey;
+    margin: 5%;
+}
+
+#copyright img {
+    width: 20%;
+    margin-right: 2%;
+}
+
+#messagebox {
+    z-index: 1;
+    position: fixed;
+    bottom: 0;
+    right: 1%;
+    display: flex;
+    align-items: center;
+    width: 20%;
+    height: auto;
+    background-color: white;
+    border: 0.1rem solid lightgray;
+    border-radius: 10px 10px 0 0;
+}
+
+#msgL {
+    width: 16%;
+    text-align: center;
+}
+
+#msgL img {
+    width: 80%;
+    border-radius: 50%;
+    border: 0.01rem solid gainsboro;
+    margin-top: 5%;
+}
+
+#msgC {
+    width: 42%;
+    text-align: left;
+}
+
+#msgC p {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+#msgR {
+    width: 42%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#msgR img {
+    width: 15%;
+    margin-right: 13%;
+    opacity: 0.7;
+}
