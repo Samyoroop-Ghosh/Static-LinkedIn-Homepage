@@ -6,7 +6,7 @@
 }
 
 hr {
-    border: 0.001rem solid rgb(238, 238, 238);
+    border: 0.05rem solid rgb(230, 230, 230);
 }
 
 nav {
@@ -14,7 +14,7 @@ nav {
     z-index: 1;
     top: 0;
     width: 100vw;
-    height: 8.5vh;
+    height: 8.2vh;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -25,22 +25,22 @@ nav {
 }
 
 nav .navleft {
-    width: 30%;
+    width: 31%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
     gap: 0.5rem;
-    margin-left: 8%;
+    margin-left: 10%;
+    /* background-color: aqua; */
 }
 
 .navleft .navicons {
-    width: 2.2rem;
+    width: 2.3rem;
     margin: auto;
 }
 
 .navleft input {
-    width: 90%;
+    width: 85%;
     padding: 1.4vh;
     font-size: 0.85rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -50,12 +50,12 @@ nav .navleft {
 }
 
 nav .navmid {
-    width: 35%;
+    width: 39%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-left: 5%;
+    margin-left: 6.5%;
 }
 
 .navmid figure {
@@ -63,7 +63,7 @@ nav .navmid {
     text-align: center;
     opacity: 0.7;
     font-size: 0.8rem;
-    padding: 1% 0;
+    padding: 1.5% 0 1% 0;
 }
 
 .navmid figure:hover {
@@ -72,23 +72,23 @@ nav .navmid {
 }
 
 .navmid .navicons {
-    width: 25%;
+    width: 27%;
     margin: auto;
 }
 
 nav .navright {
-    width: 35%;
+    width: 30%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    margin-right: 8%;
+    margin-right: 10%;
+    padding-right: 1%;
 }
 
 .navright figure {
     text-align: center;
     opacity: 0.7;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     padding: 1% 0;
 }
 
@@ -98,7 +98,6 @@ nav .navright {
 
 .navright .navicons {
     width: 20%;
-    margin: auto;
 }
 
 #maincanvas {
@@ -116,6 +115,7 @@ nav .navright {
     display: flex;
     flex-direction: column;
     gap: 2vh;
+    margin-left: 3%;
 }
 
 #profile {
@@ -142,7 +142,7 @@ nav .navright {
 }
 
 #profileusername {
-    margin: 5% 5% 2% 5%;
+    margin: 8% 5% 2% 5%;
     font-size: 1rem;
     font-weight: 600;
     text-align: center;
@@ -239,8 +239,8 @@ nav .navright {
 }
 
 #postcreate img {
-    flex: 8%;
-    width: 5%;
+    flex: 10%;
+    width: 7%;
     margin: 2% 2% 0 2%;
     border: 1px solid gainsboro;
     border-radius: 50%;
@@ -250,10 +250,12 @@ nav .navright {
     flex: 90%;
     border: 1px solid lightgray;
     border-radius: 50px;
-    padding: 2%;
+    padding: 2.7%;
     margin: 2% 2% 0 0%;
     font-size: 0.9rem;
+    font-weight: 450;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 #postcreate p:hover {
@@ -299,7 +301,7 @@ nav .navright {
     display: flex;
     align-items: center;
     justify-content: left;
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     padding: 0 1% 1% 1%;
 }
 
@@ -423,10 +425,11 @@ video {
 }
 
 #RPanel {
-    flex: 25%;
+    flex: 27%;
     display: flex;
     flex-direction: column;
     gap: 2vh;
+    margin-right: 3%;
 }
 
 #news {
@@ -439,6 +442,7 @@ video {
 #news #linkedinnews {
     width: 100%;
     font-size: 1.2rem;
+    font-weight: 500;
     padding: 3% 5% 0 5%;
     text-align: left;
 }
