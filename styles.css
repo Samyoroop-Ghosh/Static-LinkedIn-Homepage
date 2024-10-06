@@ -104,16 +104,16 @@ nav .navright {
     /* height: 100vh; */
     display: flex;
     padding: 12vh 7vw 0 7vw;
-    gap: 4vh;
+    gap: 3.5vh;
     background-color: rgb(245, 244, 239);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #LPanel {
-    flex: 20%;
+    flex: 20.5%;
     display: flex;
     flex-direction: column;
-    gap: 2vh;
+    gap: 1vh;
     margin-left: 3%;
 }
 
@@ -134,10 +134,10 @@ nav .navright {
 }
 
 #profiledp {
-    margin-left: 35%;
-    margin-top: -15%;
+    margin-left: 33%;
+    margin-top: -16%;
     width: 5vw;
-    border: 2px solid gainsboro;
+    border: 2px solid white;
     border-radius: 50%;
 }
 
@@ -177,23 +177,24 @@ nav .navright {
 }
 
 #profilepromo img {
-    width: 5%;
+    width: 6%;
 }
 
 #profilesaveditems {
     margin: 5% 5% 5% 5%;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
+    font-weight: 500;
 }
 
 #profilesaveditems img {
-    width: 5%;
+    width: 7%;
     opacity: 0.6;
 }
 
 #belowprofile {
     background-color: white;
     box-shadow: 0 0.1rem 0.1rem lightgray;
-    
+
     border: 0.01rem solid lightgrey;
     border-radius: 10px;
 }
@@ -223,7 +224,7 @@ nav .navright {
 }
 
 #CPanel {
-    flex: 50%;
+    flex: 51.5%;
     display: flex;
     flex-direction: column;
     gap: 2vh;
@@ -232,7 +233,7 @@ nav .navright {
 #post {
     background-color: white;
     box-shadow: 0 0.1rem 0.1rem lightgray;
-    
+
     border: 0.01rem solid lightgrey;
     border-radius: 10px;
 }
@@ -243,9 +244,9 @@ nav .navright {
 }
 
 #postcreate img {
-    flex: 10%;
-    width: 7%;
-    margin: 2% 2% 0 2%;
+    flex: 9%;
+    width: 5%;
+    margin: 2% 2% 0 3%;
     border: 1px solid gainsboro;
     border-radius: 50%;
 }
@@ -430,10 +431,10 @@ video {
 }
 
 #RPanel {
-    flex: 27%;
+    flex: 28%;
     display: flex;
     flex-direction: column;
-    gap: 2vh;
+    gap: 1vh;
     margin-right: 3%;
 }
 
